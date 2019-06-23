@@ -11,7 +11,7 @@ Daily learning accumulation
 
 4. 配置公钥网址：[配置公钥操作](https://www.jianshu.com/p/656756920430)
 
-5. 无法clone解决方案：将clone地址https://更改为git://
+5. 无法clone解决方案：将clone地址'https更改为git'
 
 6. 无法push上仓库：查看是否有代理设置，并取消设置
 
@@ -31,11 +31,17 @@ Daily learning accumulation
    >
    > git config --global --get https.proxy
 
-9. 
+9. 解决“Repository not found.”提示错误：
 
-   >>   
+   >$ git credential-manager uninstall
    >
-   >
+   >$ git credential-manager install
+
+10. 
+
+    >>   
+    >
+    >
 
 >
 
