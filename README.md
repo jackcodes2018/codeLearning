@@ -23,13 +23,13 @@ Daily learning accumulation
 
    > git config --global http.proxy socks5://127.0.0.1:1080
    >
-   > > git config --global https.proxy socks5://127.0.0.1:1080
+   > git config --global https.proxy socks5://127.0.0.1:1080
 
 8. 查看http、https代理配置情况
 
    > git config --global --get http.proxy
    >
-   > > git config --global --get https.proxy
+   > git config --global --get https.proxy
 
 9. 
 
