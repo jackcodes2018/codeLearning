@@ -16,6 +16,8 @@ void selectionSort(int arr[], int n)
     }
 }
 
+、、
+
 //Function2---模板函数
 typename<tyepname T>
 void selectionSort(T arr[], int n)
@@ -29,5 +31,32 @@ void selectionSort(T arr[], int n)
             }
         }
         swap(arr[i], arr[minIndex]);
+    }
+}
+
+//Function3---选择排序while写法
+template<typename T>
+void selectSort3(T arr[], int n)
+{
+    int left = 0;
+    int right = n-1;
+    while(left < right){
+        if(arr[left] > arr[right]){
+			swap(arr[left], arr[right]);
+		}
+		
+		int minIndex = left;
+		int maxIndex = right;
+		for(int i = left + 1; i < right; i++){
+			if(arr[i] < arr[minIndex]){
+				minIndex = i;
+			} else if(arr[i] > arr[maxIndex]){
+				maxIndex = i;
+			}
+		}
+		swap(arr[left], arr[minIndex]);
+		swap(arr[right], arr[maxIndex]);
+		left++;
+		right--;
     }
 }
